@@ -16,7 +16,7 @@
   			<div class="content-box-large">
   				<div class="row">
 	  				<div class="panel-heading">
-	  					<div class="panel-title ">Quản lý danh mục</div>
+	  					<div class="panel-title ">Quản lý Khoa ĐHBK ĐN</div>
 		  			</div>
 				</div>
 				<hr>	

@@ -24,8 +24,8 @@
 				                    <span class="glyphicon glyphicon-th-list"></span>
 				                </span>
 				                    <div class="text-box">
-				                        <p class="main-text"><a class="fs-14" href="cat.php" title="">Quản lý danh mục</a></p>
-				                        <p class="text-muted">Có 4 danh mục</p>
+				                        <p class="main-text"><a class="fs-14" href="notifications.php" title="">Quản lý thông báo</a></p>
+				                        <p class="text-muted">Có 4 thông báo</p>
 				                    </div>
 				                </div>
 				            </div>
@@ -35,8 +35,8 @@
 				                    <span class="glyphicon glyphicon-book"></span>
 				                </span>
 				                    <div class="text-box">
-				                        <p class="main-text"><a class="fs-14" href="news.php" title="">Quản lý truyện</a></p>
-				                        <p class="text-muted">Có 20 truyện</p>
+				                        <p class="main-text"><a class="fs-14" href="faculties.php" title="">Quản lý khoa</a></p>
+				                        <p class="text-muted">Có 20 khoa</p>
 				                    </div>
 				                </div>
 				            </div>

@@ -1,8 +1,8 @@
 <ul class="nav">
     <!-- Main menu -->
     <li class="current"><a href="index.php"><i class="glyphicon glyphicon-home"></i> Trang chủ</a></li>
-    <li><a href="cat.php"><i class="glyphicon glyphicon-list"></i> Danh mục</a></li>
-    <li><a href="news.php"><i class="glyphicon glyphicon-book"></i> Truyện</a></li>
+    <li><a href="notifications.php"><i class="glyphicon glyphicon-list"></i> Thông báo</a></li>
+    <li><a href="faculties.php"><i class="glyphicon glyphicon-book"></i> Khoa</a></li>
     <li><a href="add.php"><i class="glyphicon glyphicon-plus"></i> Thêm</a></li>
     <li class="submenu">
          <a href="#">

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap Admin Theme v3</title>
-    <link rel="shortcut icon" type="image/ico" href="images/icon-180x180.png" />
+    <title>BKIntro-Admin</title>
+    <link rel="shortcut icon" type="image/ico" href="images/icon-120x120.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
 	           <div class="col-md-5">
 	              <!-- Logo -->
 	              <div class="logo">
-	                 <h1><a href="index.php">VNE-Admin</a></h1>
+	                 <h1><a href="index.php">BKIntro-Admin</a></h1>
 	              </div>
 	           </div>
 	           <div class="col-md-5">

@@ -8,7 +8,7 @@
 				<div class="login-wrapper">
 			        <div class="box">
 			            <div class="content-wrap">
-			            	<img width="100px" height="100px" class="img-circle" src="images/icon-180x180.png">
+			            	<img width="100px" height="100px" class="img-circle" src="images/icon-120x120.png">
 			                <h6>Đăng nhập</h6>
 			                
 			                <div class="form-group">
