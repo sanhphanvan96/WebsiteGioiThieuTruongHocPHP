@@ -1,3 +1,6 @@
+<?php 
+  require_once "../utils/DBConnector.php";
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html  lang="en-US">
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
@@ -42,9 +45,28 @@
                       <div id="dnn_ctr1906_ModuleContent" class="DNNModuleContent ModBKNotificationsC">
                         <div class="wd-section">
                           <div class="wd-block-left-content">
-                            <h3 class="wd-title"><span class="wd-icon-30 wd-icon-notify"></span>THÔNG TIN - THÔNG BÁO</h3>
+                            <h3 class="wd-title">
+                            <span class="wd-icon-30 wd-icon-notify"></span>THÔNG TIN - THÔNG BÁO
+                            </h3>
                             <div id="wd-easytab" class="wd-tab-content">
                               <ul class="wd-list-notify">
+                              <?php 
+                                $statement = "SELECT * FROM notification ORDER BY created_at DESC";
+                                $res = $connect->query($statement);
+            
+                                if($res) {
+                                    while ($row = $res->fetch_object()){
+                              ?>
+                                <li>
+                                  <div class="wd-notify">
+                                    <div class="wd-notify-left"><span class="name">18/05</span><span class="number">2018</span></div>
+                                    <div class="wd-notify-right">
+                                      <p class="des"><a href="#"><?php echo $row->title ?></a><span class='wd-notify-news'>New</span></p>
+                                      <p class="time">18/05/2018 16:45</p>
+                                    </div>
+                                  </div>
+                                </li>
+                              <?php }} ?>
                                 <li>
                                   <div class="wd-notify">
                                     <div class="wd-notify-left"><span class="name">18/05</span><span class="number">2018</span></div>

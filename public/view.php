@@ -1,3 +1,27 @@
+<?php
+	if(!isset($_GET["idk"])) {
+    header("Location: index.php");
+    die();
+  }
+  
+  $idk = $_GET["idk"];
+  require_once "../utils/DBConnector.php";
+
+  $statement = "SELECT * FROM faculty WHERE idk='$idk'";
+  $res = $connect->query($statement);
+  
+  $row = null;
+  if($res) {
+    $row = $res->fetch_object();
+    echo "<pre>";
+    echo $row->name;
+    echo $row->info;
+    echo "</pre>";
+  } else {
+    echo "<p>Dữ liệu trống</p>";
+  }
+?>
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html  lang="en-US">
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
