@@ -1,3 +1,7 @@
+<?php
+  require_once "../utils/DBConnector.php";
+?>
+
 <div id="Content" class="wd-content-container">
   <div id="dnn_BannerContentPanel">
     <div class="DnnModule DnnModule-BKBanner2 DnnModule-1902">
@@ -23,7 +27,19 @@
                           <a href='#' >Khoa</a>
                           <ul class='wd-content-list-category-menu' style='display: none;'>
                             <div class='wd-arrow'></div>
-                            <li><a href='#' >Công nghệ Nhiệt - Điện lạnh</a></li>
+                            <?php
+                              $statement = "SELECT `idk`, `name` FROM `faculty` ORDER BY `name` ASC";
+                              $res = $connect->query($statement);
+                            
+                              if($res) {
+                                while ($row = $res->fetch_object()){
+                            ?>
+                              <li><a href='./view.php?idk=<?php echo $row->idk; ?>' ><?php echo $row->name; ?></a></li>
+                            <?php 
+                                } 
+                              }
+                            ?>
+                            <!-- <li><a href='#' >Công nghệ Nhiệt - Điện lạnh</a></li>
                             <li><a href='#' >Công nghệ Thông tin</a></li>
                             <li><a href='#' >Cơ khí</a></li>
                             <li><a href='#' >Cơ khí Giao thông</a></li>
@@ -36,7 +52,7 @@
                             <li><a href='#' >Sư phạm Kỹ thuật</a></li>
                             <li><a href='#' >Xây dựng Cầu - Đường</a></li>
                             <li><a href='#' >Xây dựng Dân dụng & Công nghiệp</a></li>
-                            <li><a href='#' >Xây dựng Thủy lợi - Thủy điện</a></li>
+                            <li><a href='#' >Xây dựng Thủy lợi - Thủy điện</a></li> -->
                           </ul>
                         </li>
                         <li>
