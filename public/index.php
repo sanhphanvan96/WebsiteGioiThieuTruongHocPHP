@@ -61,7 +61,9 @@
                                   <div class="wd-notify">
                                     <div class="wd-notify-left"><span class="name">18/05</span><span class="number">2018</span></div>
                                     <div class="wd-notify-right">
-                                      <p class="des"><a href="#"><?php echo $row->title ?></a><span class='wd-notify-news'>New</span></p>
+                                      <p class="des"><a href="notificationView.php?id=<?php echo $row->id; ?>" >
+                                        <?php echo $row->title ?></a>
+                                        <span class='wd-notify-news'>New</span></p>
                                       <p class="time">18/05/2018 16:45</p>
                                     </div>
                                   </div>

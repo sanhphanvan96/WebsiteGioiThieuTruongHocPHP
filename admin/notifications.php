@@ -22,7 +22,7 @@
 				<hr>	
 				<div class="row">
 					<div class="col-md-8">
-						<a href="add.php" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp;Thêm</a>
+						<a href="notificationAdd.php" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp;Thêm</a>
 
 					</div>
                 	<div class="col-md-4">
@@ -69,7 +69,7 @@
 									?>
 									<td width="600"><?php echo $detail; ?></td>
 									<td width="160" class="center text-center">
-										<a href="" title="" class="btn btn-primary"><span class="glyphicon glyphicon-pencil "></span> Sửa</a>
+										<a href="notificationEdit.php?id=<?php echo $row->id;?>" title="" class="btn btn-primary"><span class="glyphicon glyphicon-pencil "></span> Sửa</a>
 										<a href="" title="" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Xóa</a>
 									</td>
 								</tr>
