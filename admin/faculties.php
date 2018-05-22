@@ -25,11 +25,11 @@
 						<a href="facultyAdd.php" class="btn btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp;Thêm</a>
 
 					</div>
-                	<div class="col-md-4">
+					<div class="col-md-4">
                  	 <div class="input-group form">
-                       <input type="text" class="form-control" placeholder="Search...">
+                       <input id="search" type="text" class="form-control" placeholder="Search..." autofocus>
                        <span class="input-group-btn">
-                         <button class="btn btn-primary" type="button">Search</button>
+                         <button id="btn-search"class="btn btn-primary" type="button">Search</button>
                        </span>
                   	 </div>
                   	</div>
@@ -37,7 +37,7 @@
 
 				<div class="row">
   				<div class="panel-body">
-  					<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="example">
+  					<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="table-view">
 						<thead>
 							<tr>
 								<th>ID</th>
@@ -109,7 +109,37 @@
 		  </div>
 		</div>
     </div>
-
+	<script>
+        $(document).ready(function () {
+			$("#btn-search").on("click", ajaxSearch);
+			$("#search").keypress(function(e) {
+				if(e.which == 13) {
+					ajaxSearch(e);
+				}
+			});
+		});
+		
+		function ajaxSearch(e) {
+			e.preventDefault();
+			var searchForm = $("#search");
+			var data = searchForm.val();
+			console.log(searchForm.val());
+			$.ajax({
+				url: "./ajax/facultySearch.php",
+				type: "POST",
+				cache: false,
+				data: {
+					keyword: data
+				},
+				success: function(res) {
+					$("#table-view").html(res);
+				},
+				error: function () {
+					console.log("error: search form");
+				}
+			});
+		}
+    </script>
  	<!-- Footer -->
     <?php include_once 'inc/footer.php'; ?>
     <!-- /.footer -->

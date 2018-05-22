@@ -2,17 +2,5 @@
     <!-- Main menu -->
     <li class="current"><a href="index.php"><i class="glyphicon glyphicon-home"></i> Trang chủ</a></li>
     <li><a href="notifications.php"><i class="glyphicon glyphicon-list"></i> Thông báo</a></li>
-    <li><a href="faculties.php"><i class="glyphicon glyphicon-book"></i> Khoa</a></li>
-    <li><a href="add.php"><i class="glyphicon glyphicon-plus"></i> Thêm</a></li>
-    <li class="submenu">
-         <a href="#">
-            <i class="glyphicon glyphicon-list"></i> Pages
-            <span class="caret pull-right"></span>
-         </a>
-         <!-- Sub menu -->
-         <ul>
-            <li><a href="login.php">Login</a></li>
-            <li><a href="javascript:void(0)">Signup</a></li>
-        </ul>
-    </li>
+    <li><a href="faculties.php"><i class="glyphicon glyphicon-book"></i> Các khoa</a></li>
 </ul>

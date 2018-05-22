@@ -9,7 +9,8 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- styles -->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    <link href="css/style1.css" rel="stylesheet">
+		<link href="css/style1.css" rel="stylesheet">
+		<script src="js/jquery-2.2.4.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
