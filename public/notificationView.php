@@ -14,7 +14,7 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
     <link rel="icon" href="resource/Images/favicon.jpg" type="image/x-icon">
     <title>
-      Trường Đại học Bách khoa - Đại học Đà Nẵng > KhoaCNTT > Gioithieu
+      Trường Đại học Bách khoa - Đại học Đà Nẵng
     </title>
     <link href="resource/Portals/_default/skins/dhbk/skin4b95.css?cdv=118" type="text/css" rel="stylesheet"/>
   </head>

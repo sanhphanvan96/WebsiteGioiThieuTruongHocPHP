@@ -15,7 +15,7 @@
                 <div class="wd-top-header">
                   <div class="wd-top-left">
                     <ul class="wd-list-menu-l">
-                      <li class="first"><a href="#">Thông báo</a></li>
+                      <li class="first"><a href="index.php">Thông báo</a></li>
                       <li><a href="#">Liên hệ</a></li>
                     </ul>
                   </div>
