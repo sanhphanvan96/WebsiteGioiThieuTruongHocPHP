@@ -29,7 +29,7 @@
             $id = htmlentities($_POST["id"], ENT_QUOTES);
             $title = htmlentities($_POST["title"], ENT_QUOTES);
             $idk = htmlentities($_POST["idk"], ENT_QUOTES);
-            $detail = htmlentities($_POST["detail"], ENT_QUOTES);
+            $detail = $_POST["detail"];
             // kiểm tra tất cả các trường có null ko
             if($id == "" || $title == "" || $idk == "" || $detail == "") {
                 setFlash("error", "Lỗi: các trường không được để trống!");
