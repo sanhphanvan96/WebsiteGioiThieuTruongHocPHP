@@ -60,7 +60,11 @@
 							?>
 								<tr class="<?php if($row->id % 2 == 0) echo "odd";  else echo "even"; ?> gradeX">
 									<td><?php echo $row->id; ?></td>
-									<td><?php echo $row->title; ?></td>
+									<td>
+										<?php echo $row->title; ?>
+										<br><br>
+										<?php echo "<code>".$row->created_at."</code>"; ?>
+									</td>
 									<td><?php echo $row->idk; ?></td>
 									<?php 
 									$detail = $row->detail; 
@@ -70,7 +74,11 @@
 									<td width="600"><?php echo $detail; ?></td>
 									<td width="160" class="center text-center">
 										<a href="notificationEdit.php?id=<?php echo $row->id;?>" title="" class="btn btn-primary"><span class="glyphicon glyphicon-pencil "></span> Sửa</a>
-										<a href="" title="" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Xóa</a>
+										<a href="notificationDel.php?id=<?php echo $row->id;?>" 
+											title="" 
+											class="btn btn-danger"
+											onclick="return confirm('Bạn chắc chắn muốn xóa?');"
+											><span class="glyphicon glyphicon-trash"></span> Xóa</a>
 									</td>
 								</tr>
 							<?php 
