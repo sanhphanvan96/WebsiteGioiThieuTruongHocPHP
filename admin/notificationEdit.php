@@ -28,7 +28,7 @@
             // Nếu submit thì cập nhật thông báo
             $id = htmlentities($_POST["id"], ENT_QUOTES);
             $title = htmlentities($_POST["title"], ENT_QUOTES);
-            $idk = htmlentities($_POST["idk"], ENT_QUOTES);
+            $idk = $_POST["idk"];
             $detail = $_POST["detail"];
             // kiểm tra tất cả các trường có null ko
             if($id == "" || $title == "" || $idk == "" || $detail == "") {
