@@ -16,7 +16,7 @@ body {
 /* Footer */
 
 footer{
-   background-color:#FC8010;
+   background-color:#000000;
    // box-shadow:inset 0px 0px 3px #111;
    color:#fff;
    font-size:14px;
@@ -53,7 +53,7 @@ footer .copy{
 
 .header{
    height:50px;
-   background-color: #008D4C;
+   background-color: #000000;
 }
 
 .header .logo h1{
