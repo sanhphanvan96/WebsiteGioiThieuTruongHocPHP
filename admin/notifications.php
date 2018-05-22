@@ -61,17 +61,17 @@
 								<tr class="<?php if($row->id % 2 == 0) echo "odd";  else echo "even"; ?> gradeX">
 									<td><?php echo $row->id; ?></td>
 									<td>
-										<?php echo $row->title; ?>
+										<a href="../public/notificationView.php?id=<?php echo $row->id; ?>" target="_blank"><?php echo $row->title; ?></a>
 										<br><br>
 										<?php echo "<code>".$row->created_at."</code>"; ?>
 									</td>
 									<td><?php echo $row->idk; ?></td>
 									<?php 
 									$detail = $row->detail; 
-									if (strlen($detail) > 500)
-										$detail = substr($detail, 0, 500) . '...';
+									if (strlen($detail) > 400)
+										$detail = substr($detail, 0, 400) . '...';
 									?>
-									<td width="600"><?php echo $detail; ?></td>
+									<td width="600"><?php echo htmlspecialchars($detail); ?></td>
 									<td width="160" class="center text-center">
 										<a href="notificationEdit.php?id=<?php echo $row->id;?>" title="" class="btn btn-primary"><span class="glyphicon glyphicon-pencil "></span> Sửa</a>
 										<a href="notificationDel.php?id=<?php echo $row->id;?>" 

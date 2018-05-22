@@ -11,7 +11,6 @@
         $title = $_POST["title"];
         $detail = $_POST["detail"];
 		$idk = $_POST["idk"];
-		echo $title."-".$detail."-".$idk;
         if($title == "" || $detail == "" || $idk == "") {
 			header("location: notificationAdd.php");
 			die();
