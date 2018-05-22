@@ -4,6 +4,10 @@
 
     <div class="page-content">
     	<div class="row">
+		  <div class="col-md-2"></div>
+		  <div class="col-md-10">
+			  <?php require_once "inc/flash.php";?>
+		  </div>
 		  <div class="col-md-2">
 		  	<div class="sidebar content-box" style="display: block;">
                 <!-- Nav-bar -->
@@ -39,7 +43,7 @@
 				<div class="row">
   				<div class="panel-body">
 					  <table cellpadding="0" cellspacing="0" border="0" 
-					  	class="table table-striped table-bordered" 
+					  	class="table table-hover table-striped table-bordered" 
 					  	id="table-view">
 						<thead>
 							<tr>

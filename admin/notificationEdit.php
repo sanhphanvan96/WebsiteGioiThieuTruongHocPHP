@@ -8,16 +8,6 @@
     $idk = null;
     $detail = null;
     $title = null;
-    // $faculties = null;
-
-    // $statement = "SELECT `idk`, `name` FROM `faculty` ORDER BY `name` ASC";
-    // $faculties = $connect->query($statement);
-
-    // if($faculties) {
-    //     while ($row = $faculties->fetch_object()){
-    //         echo '<option value="'.$row->idk.'">'.$row->name.'</option>';
-    //     }
-    // }
 
     if(isset($_GET["id"])) {
         $id = $_GET["id"];
@@ -42,21 +32,14 @@
             $detail = htmlentities($_POST["detail"], ENT_QUOTES);
             // kiểm tra tất cả các trường có null ko
             if($id == "" || $title == "" || $idk == "" || $detail == "") {
-                // render form với thông báo lỗi
-                // renderForm();
-                // setFlash("error", "Lỗi: các trường không được để trống!");
+                setFlash("error", "Lỗi: các trường không được để trống!");
             } else {
                 // cập nhật giá trị cho thông báo
                 $sql = "UPDATE notification SET title='$title', idk='$idk', detail='$detail' WHERE id='$id'";
                 if ($connect->query($sql) === TRUE) {
-                    //$field = mysqli_query($connect, "SELECT * FROM nhanvien WHERE idnv='$id'");
-                    //$field = $field->fetch_object();
-                    //renderForm($field, $id);
-                    //setFlash("success", "Đã cập nhật thông tin nhân viên thành công!");
-                    echo "Đã chỉnh sửa thông báo thành công!";
+                    setFlash("success", "Đã cập nhật thông tin thông báo thành công!");
                 } else {
-                    // setFlash("error", "Cập nhật thông tin nhân viên không thành công! ".$connect->error);
-                    echo "Không thể chỉnh sửa thông báo!";
+                    setFlash("error", "Cập nhật thông tin thông báo không thành công! ".$connect->error);
                 }
             }
         }
@@ -65,6 +48,10 @@
 <form method="post" action="">
     <div class="page-content">
     	<div class="row">
+            <div class="col-md-2"></div>
+		  <div class="col-md-10">
+			  <?php require_once "inc/flash.php";?>
+		  </div>
 		  <div class="col-md-2">
 		  	<div class="sidebar content-box" style="display: block;">
                 <!-- Nav-bar -->

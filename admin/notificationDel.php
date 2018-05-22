@@ -1,4 +1,5 @@
 <?php
+    require_once "../utils/auth.php";
     // connect to the database
     require_once "../utils/DBConnector.php";
 
@@ -14,12 +15,12 @@
         } else {
             echo "Error updating record: " . $connect->error;
         }
-        // setFlash("success", "Đã xóa thành công.");
+        setFlash("success", "Đã xóa thành công.");
         // redirect user after delete is successful
         header("Location: notifications.php");
     } else {
     // if the 'id' variable isn't set, redirect the user
-        // setFlash("error", "ID không hợp lệ.");
+        setFlash("error", "ID không hợp lệ.");
         header("Location: index.php");
     }
 ?>

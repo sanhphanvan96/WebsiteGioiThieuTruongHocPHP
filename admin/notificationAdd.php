@@ -18,11 +18,9 @@
 		$sql = "INSERT INTO notification (title, idk, detail) VALUES 
 			('$title', '$idk', '$detail')";
 		if ($connect->query($sql) === TRUE) {
-			// setFlash("success", "Đã tạo mới nhân viên thành công!");
-			echo "Đã tạo mới nhân viên thành công!";
+			setFlash("success", "Đã tạo mới thông báo thành công!");
 		} else {
-			// setFlash("error", "Tạo mới nhân viên không thành công! ".$connect->error);
-			echo "Tạo mới nhân viên không thành công! ".$connect->error;
+			setFlash("error", "Tạo mới thông báo không thành công! ".$connect->error);
 		}
     }
 
@@ -30,6 +28,10 @@
 <form method="post" action="">
     <div class="page-content">
     	<div class="row">
+		  <div class="col-md-2"></div>
+		  <div class="col-md-10">
+			  <?php require_once "inc/flash.php";?>
+		  </div>
 		  <div class="col-md-2">
 		  	<div class="sidebar content-box" style="display: block;">
                 <!-- Nav-bar -->

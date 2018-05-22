@@ -28,21 +28,14 @@
             $info = $_POST["info"];
             // kiểm tra tất cả các trường có null ko
             if($idk == "" || $name == "" || $info == "") {
-                // render form với thông báo lỗi
-                // renderForm();
-                // setFlash("error", "Lỗi: các trường không được để trống!");
+                setFlash("error", "Lỗi: các trường không được để trống!");
             } else {
                 // cập nhật giá trị cho thông báo
                 $sql = "UPDATE faculty SET name='$name', info='$info' WHERE idk='$idk'";
                 if ($connect->query($sql) === TRUE) {
-                    //$field = mysqli_query($connect, "SELECT * FROM nhanvien WHERE idnv='$id'");
-                    //$field = $field->fetch_object();
-                    //renderForm($field, $id);
-                    //setFlash("success", "Đã cập nhật thông tin nhân viên thành công!");
-                    echo "Đã chỉnh sửa thông tin khoa thành công!";
+                    setFlash("success", "Đã cập nhật thông tin khoa thành công!");
                 } else {
-                    // setFlash("error", "Cập nhật thông tin nhân viên không thành công! ".$connect->error);
-                    echo "Không thể chỉnh sửa thông tin khoa!";
+                    setFlash("error", "Cập nhật thông tin khoa không thành công! ".$connect->error);
                 }
             }
         }
@@ -51,6 +44,10 @@
 <form method="post" action="">
     <div class="page-content">
     	<div class="row">
+          <div class="col-md-2"></div>
+		  <div class="col-md-10">
+			  <?php require_once "inc/flash.php";?>
+		  </div>
 		  <div class="col-md-2">
 		  	<div class="sidebar content-box" style="display: block;">
                 <!-- Nav-bar -->

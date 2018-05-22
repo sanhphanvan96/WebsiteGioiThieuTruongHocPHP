@@ -18,11 +18,9 @@
 		$sql = "INSERT INTO faculty (idk, name, info) VALUES 
 			('$idk', '$name', '$info')";
 		if ($connect->query($sql) === TRUE) {
-			// setFlash("success", "Đã tạo mới khoa thành công!");
-			echo "Đã tạo mới khoa thành công!";
+			setFlash("success", "Đã tạo mới khoa thành công!");
 		} else {
-			// setFlash("error", "Tạo mới khoa không thành công! ".$connect->error);
-			echo "Tạo mới khoa không thành công! ".$connect->error;
+			setFlash("error", "Tạo mới khoa không thành công! ".$connect->error);
 		}
     }
 
@@ -30,6 +28,10 @@
 <form method="post" action="">
     <div class="page-content">
     	<div class="row">
+		  <div class="col-md-2"></div>
+		  <div class="col-md-10">
+			  <?php require_once "inc/flash.php";?>
+		  </div>
 		  <div class="col-md-2">
 		  	<div class="sidebar content-box" style="display: block;">
                 <!-- Nav-bar -->

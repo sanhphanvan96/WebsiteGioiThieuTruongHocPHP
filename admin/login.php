@@ -35,6 +35,10 @@
 
 	<div class="page-content container">
 		<div class="row">
+		  <div class="col-md-2"></div>
+		  <div class="col-md-10">
+			  <?php require_once "inc/flash.php";?>
+		  </div>
 			<div class="col-md-4 col-md-offset-4">
 				<div class="login-wrapper">
 			        <div class="box">

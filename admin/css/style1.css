@@ -290,7 +290,7 @@ footer .copy{
   font-size: 14px;
   line-height: 20px;
   padding: 15px 15px;
-  color: #999;
+  /* color: #999; */
   display: block;
    font-weight:bold;
    background:none;
@@ -384,7 +384,7 @@ body {
   background-color: #eff0f3;
 }
 .page-content{
-  padding-bottom: 300px;
+  padding-bottom: 50px;
 }
 
 /** Login & Signup **/

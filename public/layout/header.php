@@ -39,20 +39,6 @@
                                 } 
                               }
                             ?>
-                            <!-- <li><a href='#' >Công nghệ Nhiệt - Điện lạnh</a></li>
-                            <li><a href='#' >Công nghệ Thông tin</a></li>
-                            <li><a href='#' >Cơ khí</a></li>
-                            <li><a href='#' >Cơ khí Giao thông</a></li>
-                            <li><a href='#' >Điện</a></li>
-                            <li><a href='#' >Điện tử - Viễn thông</a></li>
-                            <li><a href='#' >Hóa</a></li>
-                            <li><a href='#' >Kiến trúc</a></li>
-                            <li><a href='#' >Môi trường</a></li>
-                            <li><a href='#' >Quản lý Dự án</a></li>
-                            <li><a href='#' >Sư phạm Kỹ thuật</a></li>
-                            <li><a href='#' >Xây dựng Cầu - Đường</a></li>
-                            <li><a href='#' >Xây dựng Dân dụng & Công nghiệp</a></li>
-                            <li><a href='#' >Xây dựng Thủy lợi - Thủy điện</a></li> -->
                           </ul>
                         </li>
                         <li>
@@ -100,7 +86,7 @@
                 <span id="dnn_ctr1902_View_lblMenu">
                   <div id='cbp - hrmenu' class='menu'>
                     <ul>
-                      <li><a href='#' >Home</a></li>
+                      <li><a href='index.php' >Home</a></li>
                       <li>
                         <a href='#' >Giới thiệu</a>
                         <ul>
