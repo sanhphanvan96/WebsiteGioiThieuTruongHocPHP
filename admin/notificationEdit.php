@@ -61,29 +61,6 @@
             }
         }
     }
-    if(isset($_POST["submit"])) {
-        // echo "<pre>";
-        // print_r($_REQUEST);
-        // echo "</pre>";
-        $id = $_POST["id"];
-        $title = $_POST["title"];
-        $detail = $_POST["detail"];
-		$idk = $_POST["idk"];
-        if($title == "" || $detail == "" || $idk == "") {
-			header("location: notificationAdd.php");
-			die();
-		}
-		$sql = "INSERT INTO notification (title, idk, detail) VALUES 
-			('$title', '$idk', '$detail')";
-		if ($connect->query($sql) === TRUE) {
-			// setFlash("success", "Đã tạo mới nhân viên thành công!");
-			echo "Đã tạo mới thông báo thành công!";
-		} else {
-			// setFlash("error", "Tạo mới thông báo không thành công! ".$connect->error);
-			echo "Tạo mới thông báo không thành công! ".$connect->error;
-		}
-    }
-
 ?>
 <form method="post" action="">
     <div class="page-content">
@@ -109,7 +86,7 @@
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="form-group">
-											<label for="name">Tiêu đề</label>
+											<label for="title">Tiêu đề</label>
 											<input name="title" type="text" class="form-control" 
                                             value="<?php echo $title; ?>"
                                             placeholder="Nhập tiêu đề">

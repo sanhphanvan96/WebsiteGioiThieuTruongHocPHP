@@ -11,6 +11,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html  lang="en-US">
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <link rel="icon" href="resource/Images/favicon.jpg" type="image/x-icon">
   <head id="Head">
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
     <title>
@@ -66,13 +67,10 @@
                               }
                             
                               // redirect if dont have any record
-                              if($row == null) {
-                                header("Location: index.php");
-                                die();
-                              }
+                              if($row != null) {
                           ?>
                           <?php echo "<h2>".$row->name."</h2>"; ?>
-                          <?php echo $row->info; ?>
+                          <?php echo $row->info; }?>
                           </div>
                         </div>
                       </span>

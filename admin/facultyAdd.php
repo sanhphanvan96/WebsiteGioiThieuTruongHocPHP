@@ -49,11 +49,13 @@
 								<div class="row mb-10"></div>
 								
 								<div class="row">
-									<div class="col-sm-6">
+									<div class="col-sm-3">
 										<div class="form-group">
 											<label for="idk">Mã khoa</label>
 											<input name="idk" type="text" class="form-control" placeholder="KhoaCNTT">
-										</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
 										<div class="form-group">
 											<label for="name">Tên khoa</label>
 											<input name="name" type="text" class="form-control" placeholder="Khoa Công nghệ Thông tin">

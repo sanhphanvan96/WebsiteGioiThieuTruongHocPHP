@@ -12,6 +12,7 @@
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
   <head id="Head">
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <link rel="icon" href="resource/Images/favicon.jpg" type="image/x-icon">
     <title>
       Trường Đại học Bách khoa - Đại học Đà Nẵng > KhoaCNTT > Gioithieu
     </title>
