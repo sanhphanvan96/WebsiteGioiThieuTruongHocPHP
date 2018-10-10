@@ -1,3 +1,4 @@
 admin/bootstrap/css/*       linguist-vendored
 admin/css/*                 linguist-vendored
 admin/js/*                  linguist-vendored
+public/resource/Portals/_default/skins/dhbk/css/*.*         linguist-vendored
